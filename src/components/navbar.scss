@@ -1,0 +1,92 @@
+@import "../global.scss";
+
+.navbar{
+    width: 100%;
+    min-height: 70px;
+    
+
+    box-shadow: 0px 1px 5px #00000033;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    
+    border-top: solid 3px rgb(1, 1, 151);
+    background-color: #f8f9f9;
+    justify-content: space-between;
+
+    .nav-container{
+        display: flex;
+        align-items: center;
+        max-width: 1290px;
+        margin: 0 auto;
+
+        .logo{
+            font-size: 26px;
+            color: rgb(19, 19, 208);
+        }
+
+
+        .nav-item{
+            margin: 0px 3px;
+            font-weight: 500;
+            text-decoration: none;
+            color: rgb(69,69,69);
+            transition: 0.2s;
+        }
+
+        .list{
+            @include mobile{
+                display: none;
+            }
+        }
+    
+        .nav-item:hover{
+            background-color: rgb(200,195,195);
+        }
+    
+        .nav-btn{
+            border-radius: 20px;
+            padding: 10px 20px;
+        }
+    
+        form{
+            display: flex;
+            align-items: center;
+    
+            flex-grow: 1;
+            padding: 0px 12px;
+            position: relative;
+            
+            @include mobile{
+                display: none;
+            }
+           
+    
+            input{
+                min-width: 90%;
+                margin: 0;
+                padding: 8px 10px 8px 12px;
+                font-size: 13px;
+                border: solid 1px #0000003e;
+                border-radius: 3px;
+                
+                
+            }
+    
+            .search-icon{
+                position: absolute;
+                top: 8px;
+                left: 25px;
+            }
+        }
+    
+        .navbar-2{
+            display: flex;
+        }
+
+    }
+    
+
+    
+}
+
