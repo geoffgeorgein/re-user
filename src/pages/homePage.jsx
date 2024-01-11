@@ -15,7 +15,7 @@ const HomePage = ({slideIn,handleSlideIn}) => {
       <div className='home-container'>
 
         <HomeMainbar/>
-        <RightSidebar/>
+        {/* <RightSidebar/> */}
 
       </div>
         
