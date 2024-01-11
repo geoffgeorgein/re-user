@@ -1,4 +1,4 @@
-import React from 'react'
+
 import LeftSidebar from '../components/leftSidebar';
 import HomeMainbar from '../components/homeMainbar';
 import RightSidebar from '../components/rightSidebar';
@@ -11,7 +11,7 @@ const Questions = ({slideIn,handleSlideIn}) => {
       <div className='home-container'>
 
         <HomeMainbar/>
-        <RightSidebar/>
+        {/* <RightSidebar/> */}
 
       </div>
         
