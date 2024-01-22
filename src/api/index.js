@@ -1,7 +1,11 @@
 import axios from "axios";
 
+// const API = axios.create({
+//   baseURL: "https://stack-overflow-backend-kly3.onrender.com",
+// });
+
 const API = axios.create({
-  baseURL: "https://stack-overflow-backend-kly3.onrender.com",
+  baseURL: "http://localhost:5000",
 });
 
 API.interceptors.request.use((req) => {

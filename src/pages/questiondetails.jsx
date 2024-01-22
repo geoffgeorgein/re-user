@@ -105,7 +105,7 @@ const Questionsdetails = () => {
         <h1>Loading...</h1>:
         <>
             {
-                questionsList.data.filter(question=>question._id===id).map(question=>(
+                questionsList?.data?.filter(question=>question._id===id).map(question=>(
                     <div key={question._id}>
                         <section className='question-details-container'>
 

@@ -16,6 +16,9 @@ const UserProfile = ({ slideIn, handleSlideIn }) => {
   const users = useSelector((state) => state.usersReducer);
   const currentProfile = users.filter((user) => user._id === id)[0];
   const currentUser = useSelector((state) => state.currentUserReducer);
+
+  console.log("userr",currentUser);
+  console.log("profile",currentProfile);
   const [Switch, setSwitch] = useState(false);
 
   return (
@@ -42,7 +45,7 @@ const UserProfile = ({ slideIn, handleSlideIn }) => {
                 </p>
               </div>
             </div>
-            {currentUser?.result._id === id && (
+            {currentUser?.result?._id === id && (
               <button
                 type="button"
                 onClick={() => setSwitch(true)}
